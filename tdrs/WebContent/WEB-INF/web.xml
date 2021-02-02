@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <welcome-file-list>
+    
+    <welcome-file>&quot;liste.jsp&quot;</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Entete</servlet-name>
+    <servlet-class>com.octe.bdd.Entete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entete</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Liste</servlet-name>
+    <servlet-class>com.octe.bdd.Liste</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Liste</servlet-name>
+    <url-pattern>/listeentete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>AjoutEntete</servlet-name>
+    <servlet-class>com.octe.servlet.gestionentete.AjoutEntete</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>AjoutEntete</servlet-name>
+    <url-pattern>/ajout_entete</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+    <servlet-name>ModifEntete</servlet-name>
+    <servlet-class>com.octe.servlet.gestionentete.ModifEntete</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>ModifEntete</servlet-name>
+    <url-pattern>/modif_entete</url-pattern>
+  </servlet-mapping>  
+  
+  
+</web-app>
